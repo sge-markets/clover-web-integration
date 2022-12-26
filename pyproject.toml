@@ -1,0 +1,12 @@
+[tool.pdm]
+
+[project]
+name = ""
+version = ""
+description = ""
+authors = [
+    {name = "SGE", email = "dev@sgeltd.com"},
+]
+dependencies = []
+requires-python = ">=3.9"
+license = {text = "MIT"}
