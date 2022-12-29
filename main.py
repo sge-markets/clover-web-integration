@@ -12,7 +12,7 @@ async def oauth_step1(client_id: str, employee_id: str, merchant_id: str, code: 
         ("code", code),
         ("client_secret", os.environ["CLOVER_SECRET"]),
     ]
-    print(params)
+    print(f"params:{params}")
     async with aiohttp.ClientSession() as session:
         async with session.get(
             "https://sandbox.dev.clover.com/oauth/token", params=params
